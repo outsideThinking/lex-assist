@@ -1,0 +1,91 @@
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --blue:   #0a3b5b;
+  --gold:   #c9a03d;
+  --light:  #f8fafc;
+  --white:  #ffffff;
+  --gray:   #475569;
+  --border: #e2e8f0;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #fff;
+  color: #1e293b;
+  line-height: 1.5;
+}
+
+h1, h2, h3 { font-weight: 600; letter-spacing: -0.02em; }
+
+h2 {
+  font-size: 2.2rem;
+  color: var(--blue);
+  margin-bottom: 2rem;
+  position: relative;
+}
+h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: var(--gold);
+  margin-top: 0.5rem;
+  border-radius: 4px;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.btn-primary {
+  background: var(--blue);
+  color: #fff;
+  border: 1px solid transparent;
+  padding: 0.9rem 2.2rem;
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+}
+.btn-primary:hover {
+  background: var(--gold);
+  color: var(--blue);
+  border-color: var(--blue);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--blue);
+  color: var(--blue);
+  padding: 0.9rem 2.2rem;
+  border-radius: 40px;
+  font-weight: 600;
+  transition: 0.2s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+}
+.btn-outline:hover { background: var(--blue); color: #fff; }
+
+.badge {
+  background: var(--gold);
+  color: var(--blue);
+  padding: 0.25rem 0.9rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  display: inline-block;
+}
+
+.star-rating { color: gold; }
