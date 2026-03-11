@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # LexAssist — React + Vite Frontend
 
 ## ▶️ Run the project
@@ -56,3 +57,6 @@ lexassist-vite/
 npm run build
 npm run preview
 ```
+=======
+# LexAssist
+>>>>>>> 897e25b528ebaa00a062e8fc843a02add430af37
